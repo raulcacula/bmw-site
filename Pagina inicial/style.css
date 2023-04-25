@@ -1,0 +1,1296 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(248, 248, 248.1000);
+}
+nav img{
+width: 5%;
+
+}
+nav{
+  display: flex;
+  text-align: left;
+  margin-top: -10px;
+  font-family: sans-serif;
+  padding: 1rem;
+  background-color:rgb(0, 0, 0);
+}
+nav a{
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 0px 0px 10px 0;
+  font-size: 18px;
+  font-family: monospace;
+  font-weight:bold;
+  position: relative;
+}
+nav a::after{
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: blue;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  transition:0.3s;
+}
+nav a:hover::after{
+  width: 100%;
+}
+nav ul a{
+  display: flex;
+  color: aqua;
+  text-align: right;
+  margin-left: 400px;
+}
+.nav-mobile{
+  display:none ;
+}
+@media(max-width:900px){
+      .nav-desktop{
+        display: none;
+      }
+      .nav-mobile{
+        display: flex;
+        background-color: transparent;
+      }
+      nav{
+        padding: 4rem;
+        flex-direction: column;
+
+        background-color:black;
+        z-index: 500px;
+        text-align: center;
+        background-size: cover;
+        width: 390px;
+        width: 100%;
+      }
+      i{
+        color: white;
+        font-size: 30px;
+      }
+      #items{
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+        margin-left: -400px;
+        line-height: 2;
+        margin-top: 80px;
+        display: none;
+        width: 100%;
+      }
+       #burguer{
+        text-align: left;
+        width: 100%;
+        margin-left: 100px;
+       }
+    }
+.background-m8{
+    background:rgba(3,0,12,0.4) url(https://c4.wallpaperflare.com/wallpaper/69/501/212/bmw-bmw-m8-gran-coupe-wallpaper-preview.jpg);
+    background-blend-mode: darken;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    margin-top: -100px;
+}
+.inicio{
+    padding: 3rem;
+    margin-top: 100px;
+}
+.inicio h1{
+    margin-left: 50px;
+    font-size: 90px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.inicio span{
+    color: blue;
+}
+.inicio p{
+    line-height: 5;
+    color: white;
+    margin-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+.inicio h2{
+    color:aliceblue;
+    text-align: left;
+    margin-left: 900px;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+.inicio p2{
+    color: white;
+    margin-left: 900px;
+    font-weight: 300;
+    font-size:30px ;
+
+}
+
+.container img{
+    width: 650px;
+    height: 300px;
+    position: relative;
+    z-index: -1;
+
+}
+.container{
+    margin-top: 15px;
+    margin-left: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: 2s;
+}
+.legenda-m5{
+    position:absolute;
+    left: 15px;
+    bottom: 30px;
+}
+.legenda-m5 h1{
+    margin: 0;
+    color: aliceblue;
+    line-height: 3;
+}
+.legenda-m5 a{
+    color: white;
+    text-decoration: none;
+    border-color: white;
+    border-style: solid;
+    font-weight: 300;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    margin-left: 0px;
+}
+.legenda-m5 a:hover{
+    background-color: #383030;
+}
+
+.container-thue{
+    margin-top: -304px;
+    margin-left: 670px;
+    position: relative;
+    overflow: hidden;
+    transition: 2s;
+}
+.container-thue img{
+    width: 670px;
+    height: 300px;
+    position: relative;
+    z-index: -1;
+}
+
+.texto-thue{
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: left;
+    padding: 1rem 1rem;
+}
+.texto-thue h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     margin-left: 20px;
+   font-weight: 300;
+   
+}
+.gray{ 
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 30%;
+    padding: 3rem ;
+}
+ .gray-thue{
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 30%;
+    padding: 3rem ;
+ }
+ .solicitar{
+    margin-top: -195px;
+    margin-left: 500px;
+    text-align: center;
+ }
+ .solicitar a{
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    padding: 1rem 1rem;
+    line-height: 4;
+    border-radius: 3px;
+    margin-left: 0px;
+ }
+ .solicitar a:hover{
+    background-color: rgba(5, 5, 212, 0.925);
+ }
+ .seta{
+    margin-top: -155px;
+    margin-left: 930px;
+    text-align: center;
+    
+ }
+ .seta p{
+    font-size: 30px;
+    animation: animo-seta  2s ease infinite;
+    margin-left: 30px;
+ }
+ @keyframes animo-seta{
+
+    100%{
+        transform: translateY(5px);
+    }
+ }
+
+ 
+  .gray-trird{
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 50%;
+    padding: 3rem ;
+ }
+ section{
+    margin-top: 100px;
+ }
+ .titulo h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    
+ }
+ .titulo{
+    margin-left: 100px;
+ }
+ .gray-titulo{
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 50%;
+    padding: 1rem ;
+ }
+   .roda{
+
+    margin-top: 50px;
+    margin-left: 300px;
+   }
+   .roda h2{
+    font-family: sans-serif;
+    font-weight: 300;
+   }
+ .roda img{
+    justify-content: left;
+    text-align: left;
+    width: 30%;
+     margin-left: -80px;
+ }
+ .roda a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 0.5rem 0.5rem;
+    line-height: 5;
+    color: white;
+    margin-left: 0px;
+ }
+  .spoiler{
+    margin-top: -440px;
+    margin-left: 500px;
+  }
+  .spoiler img{
+    width: 60%;
+  }
+  .spoiler h3{
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+  .spoiler a{
+    font-size: 15px;
+    padding: 0.5rem 0.5rem;
+  }
+  .bloco{
+    margin-top: 150px;
+  }
+  .bloco h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-left: 100px;
+    color: white;
+  }
+  .bloco img{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 25%;
+  }
+  .bloco h2{
+    margin-left: 200px;
+    font-family: sans-serif;
+    color: white;
+  }
+  .bloco h3{
+    line-height: 2;
+    margin-left: 220px;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  .bloco a{
+    line-height: 4;
+    text-decoration: none;
+    margin-left: 190px;
+    border-color: white;
+    border-style: solid;
+    padding: 1rem 3.5rem;
+    color: white;
+
+  }
+  .background-black{
+    background-color: #000;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+  }
+ .bloco img{
+    display: inline-flex;
+ }
+ .ix{
+    margin-top: -328px;
+    margin-left:700px;
+ }
+ .ix img{
+    width: 45%;
+    margin-left: -150px;
+ }
+ .ix h2{
+    margin-left: 240px;
+    margin-left: -40px;
+ }
+ .ix h3{
+  
+    margin-left: -60px;
+ }
+ .ix a{
+  margin-left: -120px;
+ }
+  .bloco h1{
+    color: #474747;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+  .i8{
+    margin-top: -425px;
+    margin-left:770px;
+  }
+  .i8 img{
+    width: 55%;
+
+  }
+  .i8 h2{
+    margin-left: 250px;
+  }
+  .i8 h3{
+    margin-left: 250px;
+  }
+  .bloco a:hover{
+    border-color: blue;
+  }
+
+  .financeiro{
+    text-align: left;
+    margin-top: 100px;
+     padding: 0.4rem;
+     margin-left: 100px;
+  }
+  .financeiro img{
+    width: 500px;
+    height: 100%;
+  }
+  .financeiro h1,p{
+    text-align: left;
+    
+  }
+  .financeiro h1{
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+
+  .financeiro p{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+
+  }
+  .financeiro a{
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 3;
+    color: #000;
+    transition: 0.5s;
+    margin-left: 0px;
+  }
+  .financeiro a:hover{
+     color: blue;
+
+  }
+
+  .financeiro p1{
+    color: rgb(0, 0, 0);
+
+  }
+  .linha img{
+   margin-top: -250px;
+  }
+  .carros-0km{
+    text-align: center;
+    margin-top: -450px;
+     padding: 0.4rem;
+    margin-left: 450px;
+  }
+  .carros-0km img{
+    width: 20%;
+  }
+  .carros-0km h1{
+    text-align: center;
+  }
+  .carros-0km a{
+
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 15;
+    color: #000;
+    transition: none;
+    border-color: rgb(136, 131, 131);
+    border-style: solid;
+    padding: 1rem 4rem;
+  }
+  .carros-0km a:hover{
+    color: #000;
+    border-color:black ;
+  }
+  .linha-thue img{
+    width: 70%;
+    margin-top: -299px;
+  }
+  .background-x1{
+    background: url(https://www.bmw.com.br/content/dam/bmw/common/all-models/x-series/x1/2022/highlights/bmw-x-series-x1-sp-desktop.jpg);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    margin-top: 20px;
+    line-height: 3;
+  }
+  .x1 h1,a{
+    color: white;
+    margin-left: 150px;
+ }
+ .x1 h1{
+    font-family:sans-serif;
+    font-weight: 300;
+ }
+ .x1 span{
+  font-size: 60px;
+  color: rgba(255, 166, 0, 0.87);
+ }
+ .x1 a{
+  text-decoration: none;
+  border-color: white;
+  border-style: solid;
+  padding: 1rem 4rem;
+ }
+ .x1 a:hover{
+  color: orange;
+ }
+ .x1-texto{
+  margin-top: 20px;
+ }
+ .x1-texto h2{
+   padding: 5rem;
+   margin-left: 100px;
+   line-height: 1.3;
+ 
+ }
+  .x1-texto span{
+    color: rgba(0, 0, 0, 0.979);
+    font-size: 40px;
+    margin-left: 40px;
+
+  }
+  .x1-texto h3{
+    color: #383030;
+    font-size: 60px;
+     font-weight: 300;
+    margin-top: -170px;
+    margin-left: 400px;
+  }
+
+  .x1-texto-thue{
+    margin-left: 350px;
+     margin-top: -142px;
+  }
+  .x1-texto-thue h2{
+    margin-left: 100px;
+    margin-top: -155px;
+  }
+  .x1-texto-thue span{
+    margin-left: -20px;
+  }
+  .x1-texto-trid{
+    margin-left: 700px;
+     margin-top: -142px;
+  }
+  .driver{
+    margin-top: 100px;
+  }
+  .driver img{
+    width: 550px;
+    height: 100%;
+    margin-left: 70px;
+  }
+  .driver h1{
+     margin-top: -350px;
+     margin-left: 650px;
+     font-family: monospace;
+     font-weight: 100;
+     line-height: 2;
+     font-variant: small-caps;
+     font-size: 52px;
+  }
+  .driver p{
+    margin-left: 650px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight:100;
+    width: 50%;
+
+  }
+  .driver a{
+    line-height: 5;
+    border-color: gray;
+    padding: 1rem 4rem;
+    border-style: solid;
+    margin-left: 650px;
+    color: black;
+    text-decoration: none;
+  }
+  .driver a:hover{
+    border-color: black;
+  }
+  footer{
+    margin-top: 250px;
+      padding: 4rem;
+      background-color:ghostwhite;
+      padding: 2rem 2rem;
+  }
+  footer h1{
+    margin-left: 150px;
+  }
+  footer a:hover{
+     text-decoration: underline;
+  }
+  footer img{
+    margin-top: -200px;
+    width: 7%;
+  }
+  .texto-left{
+    text-align: left;
+    margin-left: 100px;
+  }
+  .texto-left a{
+    text-decoration: none;
+    color: #000;
+  }
+  .texto-left h1{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .texto-left a{
+    line-height: 2;
+  }
+  .texto-center{
+    text-align:left;
+    margin-top: -93px;
+    margin-left: 400px;
+  }
+  .texto-center h1{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  .texto-center a{
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+  }
+  .texto-right{
+    text-align:left;
+    margin-top: -93px;
+    margin-left: 750px;
+  }
+  .texto-right h1{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  .texto-right a{
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+  }
+  .sociais{
+    margin-left: -50px;
+    margin-top: -100px;
+     text-align: right;
+  }
+  .sociais a{
+    color: black;
+     display:block;
+    font-size: 25px;
+    line-height: 2;
+  }
+  footer a{
+    font-weight: bold;
+  }
+  @media(min-width:375px) and (max-width:460px){
+    body{
+      max-width: 100%;
+    }
+        .background-m8{
+          width: 100%;
+        }
+        .inicio{
+          line-height: 1.5;
+          text-align: left;
+          margin-left: -70px;
+          width: 100%;
+        }
+         .inicio h2,p2{
+          text-align: right;
+          margin-left:100px;
+          width: 100%;
+         }
+         .container{
+          width: 100%;
+         }
+         .container img{
+          width: 100%;
+          height: 100%;
+         }
+         .legenda-m5{
+          width: 100%;
+          font-size: 10px;
+         }
+         .container-thue{
+          width: 100%;
+          margin-left:0px;
+          margin-top: 0px;
+         }
+         .container-thue img{
+           width: 100%;
+            height: 100%;
+         }
+         .texto-thue{
+          width: 100%;
+          margin-left:0px;
+         }
+         .gray{
+          width: 100%;
+         }
+         .solicitar{
+          width: 100%;
+          margin-left:0px;
+          margin-top: 20px;
+         }
+         .gray-thue{
+          width: 100%;
+         }
+         .seta{
+          width: 100%;
+          margin-left: 80px;
+          margin-top: 20px;
+         }
+         .titulo{
+          width: 100%;
+          text-align: left;
+          margin-left: 40px;
+         }
+         .roda{
+          width: 100%;
+          text-align: left;
+           margin-left: 100px;
+         }
+         .roda img{
+          width: 50%;
+          margin-left: -60px;
+         }
+         .roda h2{
+          font-size: 20px;
+          font-weight: bold;
+          margin-left:-60px;
+         }
+         .roda a{
+          font-size: 20px;
+          margin-left: -50px;
+         }
+         .spoiler{
+          width: 100%;
+          text-align: left;
+           margin-left: 0px;
+           margin-top: 50px;
+         }
+         .spoiler img{
+          width: 50%;
+          margin-left: -60px;
+         }
+         .spoiler h3{
+          font-size: 20px;
+          font-weight: bold;
+          margin-left:-100px;
+         }
+         .spoiler a{
+          font-weight: 100;
+          font-size: 20px;
+          margin-left:-150px;
+         }
+         .bloco h1{
+             text-align: left;
+             margin-left:50px;
+         }
+         .background-black{
+          height: 190vh;
+         }
+         .bloco img{
+          text-align: center;
+          width: 70%;
+          margin-left: 50px;
+         }
+         .bloco h2,h3,a{
+          text-align: center;
+          margin-left:0px;
+          width: 100%;
+         }
+         .bloco h3{
+          margin-left:0px;
+         }
+          .bloco a{
+            width: 100%;
+            margin-left: 60px;
+          }
+          .ix{
+            text-align: center;
+            margin-left:-64px;
+            margin-top: 50px;
+          }
+          .ix h2,h3,a{
+            text-align: center;
+            margin-left:0px;
+            width: 100%;
+           }
+           .ix h3{
+            margin-left: 20px;
+           }
+           .ix h2{
+            margin-left: 20px;
+           }
+           .i8 img{
+            width: 70%;
+            margin-left: 10px;
+           }
+           .i8{
+            text-align: center;
+            margin-left: -64px;
+            margin-top: 10px;
+           }
+           .i8  h3{
+            margin-left: 20px;
+           }
+           .i8 h2{
+            margin-left: 20px;
+           }
+           .financeiro{
+            margin-top: 10px;
+            width: 100%;
+           }
+           .financeiro img{
+            width: 100%;
+            margin-left:-100px;
+           }
+           .financeiro h1{
+            text-align: left;
+            font-size: 25px;
+            margin-top: 20px;
+            margin-left:-80px;
+           }
+           .financeiro p{
+            text-align:left;
+            font-size: 18px;
+            width: 100%;
+            margin-left: -90px;
+           }
+           .financeiro a{
+            text-align: left;
+            margin-left: -80px;
+           }
+           .carros-0km{
+            width: 100%;
+            margin-left:-60px;
+            margin-top: 50px;
+           }
+           .carros-0km img{
+             width: 50%;
+           }
+           .carros-0km h1{
+            text-align: center;
+           }
+           .carros-0km a{
+            text-align:center;
+            width: 100%;
+            margin-left: -90px;
+           }
+           .background-x1{
+            width: 100%;
+            height: 100vh;
+           }
+           .x1{
+            text-align: left;
+            width: 100%;
+           }
+           .x1 h1{
+            text-align: left;
+            margin-left: 20px;
+           }
+           .x1 a{
+            margin-left:20px;
+            line-height: 5;
+            width: 100%;
+           }
+             .x1-texto{
+              display: none;
+             }
+             .driver{
+              width: 100%;
+             }
+             .driver img{
+              width: 100%;
+              margin-left:0px;
+             }
+             .driver h1{
+              width: 100%;
+              margin-left:0px;
+              text-align:center;
+              font-size: 35px;
+              font-weight: bold;
+              margin-top: 50px;
+             }
+             .driver p{
+              text-align: left;
+              width: 90%;
+              font-size: 20px;
+              margin-left:20px;
+             }
+             .driver a{
+              width: 100%;
+              margin-left: 20px;
+             }
+             footer{
+              width: 100%;
+              text-align: center;
+              margin-top: 50px;
+             }
+             .texto-left h1{
+              font-size: 20px;
+              font-size: 35px;
+              text-decoration: underline;
+              margin-left:30px;
+             }
+             footer img{
+              width: 50%;
+              margin-top:100px;
+             }
+             footer .texto-left{
+              margin-left: 60px;
+              font-size: 20px;
+              width: 100%;
+             }
+             .texto-left a{
+              font-size: 25px;
+             }
+             .texto-center h1{
+              font-size: 20px;
+              font-size: 35px;
+              text-decoration: underline;
+              margin-left:10px;
+             }
+             footer .texto-center{
+              text-align: center;
+              margin-left: -10px;
+              font-size: 20px;
+              width: 100%;
+              margin-top: 50px;
+             }
+             .texto-center a{
+              font-size: 25px;
+             }
+             .texto-right h1{
+              font-size: 20px;
+              font-size: 35px;
+              text-decoration: underline;
+              margin-left:10px;
+             }
+             footer .texto-right{
+              text-align: center;
+              margin-left: -10px;
+              font-size: 20px;
+              width: 100%;
+              margin-top: 50px;
+             }
+             .texto-right a{
+              font-size: 25px;
+             }
+             footer .sociais{
+              margin-top: 100px;
+              width: 100%;
+              display: flex;
+              margin-left: -10px;
+             }
+             .sociais a{
+              font-size: 40px;
+              
+             }
+  }
+  
+  @media(min-width:460px) and (max-width:760px){
+    body{
+      max-width: 100%;
+    }
+        .background-m8{
+          width: 100%;
+        }
+        .inicio{
+          line-height: 1.5;
+          text-align: left;
+          margin-left: -70px;
+          width: 100%;
+        }
+         .inicio h2,p2{
+          text-align: right;
+          margin-left:100px;
+          width: 100%;
+         }
+         .container{
+          width: 100%;
+         }
+         .container img{
+          width: 100%;
+          height: 100%;
+         }
+         .legenda-m5{
+          width: 100%;
+          font-size: 20px;
+         }
+         .container-thue{
+          width: 100%;
+          margin-left:0px;
+          margin-top: 10px;
+         }
+         .container-thue img{
+           width: 100%;
+            height: 100%;
+         }
+         .texto-thue{
+          width: 100%;
+          margin-left:0px;
+         }
+         .gray{
+          width: 100%;
+         }
+         .solicitar{
+          width: 100%;
+          margin-left:0px;
+          margin-top: 20px;
+         }
+         .gray-thue{
+          width: 100%;
+         }
+         .seta{
+          width: 100%;
+          margin-left: 150px;
+          margin-top: 20px;
+         }
+         .seta p{
+          margin-left: 100px;
+         }
+         .titulo{
+          width: 100%;
+          text-align: left;
+          margin-left: 40px;
+         }
+         .roda{
+          width: 100%;
+          text-align: left;
+           margin-left: 200px;
+         }
+         .roda img{
+          width: 50%;
+          margin-left: -60px;
+         }
+         .roda h2{
+          font-size: 20px;
+          font-weight: bold;
+          margin-left:-60px;
+         }
+         .roda a{
+          font-size: 20px;
+          margin-left: -50px;
+         }
+         .spoiler{
+          width: 100%;
+          text-align: left;
+           margin-left: 0px;
+           margin-top: 50px;
+         }
+         .spoiler img{
+          width: 50%;
+          margin-left: -60px;
+         }
+         .spoiler h3{
+          font-size: 20px;
+          font-weight: bold;
+          margin-left:-250px;
+         }
+         .spoiler a{
+          font-weight: 100;
+          font-size: 20px;
+          margin-left:-150px;
+         }
+         .bloco h1{
+             text-align: left;
+             margin-left:50px;
+         }
+         .background-black{
+          height: 150vh;
+         }
+         .bloco img{
+          text-align: center;
+          width: 70%;
+          margin-left: 100px;
+         }
+         .bloco h2,h3,a{
+          text-align: center;
+          margin-left:0px;
+          width: 100%;
+         }
+         .bloco h3{
+          margin-left:0px;
+         }
+          .bloco a{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            
+            margin-left: 250px;
+          }
+          .ix{
+            text-align: center;
+            margin-left:-64px;
+            margin-top: 50px;
+          }
+          .ix h2,h3,a{
+            text-align: center;
+            margin-left:0px;
+            width: 100%;
+           }
+           .ix a{
+             margin-left:20px;
+           }
+           .ix h3{
+            margin-left: 20px;
+           }
+           .ix h2{
+            margin-left: 20px;
+           }
+           .i8 img{
+            width: 70%;
+            margin-left: 10px;
+           }
+           .i8{
+            text-align: center;
+            margin-left: -64px;
+            margin-top: 10px;
+           }
+           .i8  h3{
+            margin-left: 20px;
+           }
+           .i8 h2{
+            margin-left: 20px;
+           }
+           .i8 a{
+            margin-left:50px;
+           }
+           .financeiro{
+            margin-top: 10px;
+            width: 100%;
+           }
+           .financeiro img{
+            width: 100%;
+            margin-left:-100px;
+           }
+           .financeiro h1{
+            text-align: left;
+            font-size: 35px;
+            margin-top: 20px;
+            margin-left:-80px;
+           }
+           .financeiro p{
+            text-align:left;
+            font-size: 35px;
+            width: 100%;
+            margin-left: -90px;
+           }
+           .financeiro a{
+            text-align: left;
+            margin-left: -80px;
+             font-size: 27px;
+          }
+           .carros-0km{
+            width: 100%;
+            margin-left:-60px;
+            margin-top: 50px;
+           }
+           .carros-0km img{
+             width: 50%;
+           }
+           .carros-0km h1{
+            text-align: center;
+           }
+           .carros-0km a{
+            text-align:center;
+            width: 100%;
+            margin-left: -90px;
+           }
+           .background-x1{
+            width: 100%;
+            height: 100vh;
+           }
+           .x1{
+            text-align: left;
+            width: 100%;
+           }
+           .x1 h1{
+            text-align: left;
+            font-size:40px;
+            margin-left: 50px;
+           }
+           .x1 a{
+            margin-left:50px;
+            font-size: 35px;
+            line-height: 5;
+            width: 100%;
+           }
+             .x1-texto{
+              display: none;
+             }
+             .driver{
+              width: 100%;
+             }
+             .driver img{
+              width: 100%;
+              margin-left:0px;
+             }
+             .driver h1{
+              width: 100%;
+              margin-left:0px;
+              text-align:center;
+              font-size: 45px;
+              font-weight: bold;
+              margin-top: 50px;
+             }
+             .driver p{
+              text-align: left;
+              width: 90%;
+              font-size: 35px;
+              margin-left:20px;
+             }
+             .driver a{
+              width: 100%;
+              margin-left: 20px;
+              font-size: 30px;
+             }
+             footer{
+              width: 100%;
+              text-align: center;
+              margin-top: 50px;
+             }
+             .texto-left h1{
+              font-size: 20px;
+              font-size: 35px;
+              text-decoration: underline;
+              margin-left:30px;
+             }
+             footer img{
+              width: 20%;
+              margin-top:100px;
+             }
+             footer .texto-left{
+              margin-left:250px;
+              font-size: 20px;
+              width: 100%;
+             }
+             .texto-left a{
+              font-size: 25px;
+             }
+             .texto-center h1{
+              font-size: 20px;
+              font-size: 35px;
+              text-decoration: underline;
+              margin-left:10px;
+             }
+             footer .texto-center{
+              text-align: center;
+              margin-left: -10px;
+              font-size: 20px;
+              width: 100%;
+              margin-top: 50px;
+             }
+             .texto-center a{
+              font-size: 25px;
+             }
+             .texto-right h1{
+              font-size: 20px;
+              font-size: 35px;
+              text-decoration: underline;
+              margin-left:10px;
+             }
+             footer .texto-right{
+              text-align: center;
+              margin-left: -10px;
+              font-size: 20px;
+              width: 100%;
+              margin-top: 50px;
+             }
+             .texto-right a{
+              font-size: 25px;
+              margin-left: 20px;
+             }
+             footer .sociais{
+              margin-top: 100px;
+              width: 100%;
+              display: flex;
+              margin-left: -10px;
+             }
+             .sociais a{
+              font-size: 40px;
+              
+             }
+            }
